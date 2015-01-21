@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<style>
+			.container {
+				width: 1000px;
+		    margin: 200 auto;
+			}
+
+			input {
+			  padding: 10px;
+			  font-size:20px;				
+			}
+
+			#text {
+			  width:70%;
+			}
+
+			#acronym {
+				width:25%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<input type="text" placeholder="text here" id="text" />
+			<input type="text" placeholder="acronym" id="acronym" />
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="js/jquery.acronymize.js"></script>
+		<script>
+			$(document).ready(function() {
+				$.acronymizer()
+			});
+		</script>
+	</body>
+</html>
